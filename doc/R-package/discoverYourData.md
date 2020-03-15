@@ -356,7 +356,7 @@ Higher **Chi2** means better correlation.
 
 
 ```r
-c2 <- chisq.test(df$Age, output_vector)
+c2 <- chisq.test(df$Age, output_vector, simulate.p.value = T)
 print(c2)
 ```
 
@@ -372,7 +372,7 @@ Pearson correlation between Age and illness disappearing is **35.48**.
 
 
 ```r
-c2 <- chisq.test(df$AgeDiscret, output_vector)
+c2 <- chisq.test(df$AgeDiscret, output_vector, simulate.p.value = T)
 print(c2)
 ```
 
@@ -388,7 +388,7 @@ Our first simplification of Age gives a Pearson correlation is **8.26**.
 
 
 ```r
-c2 <- chisq.test(df$AgeCat, output_vector)
+c2 <- chisq.test(df$AgeCat, output_vector, simulate.p.value = T)
 print(c2)
 ```
 
